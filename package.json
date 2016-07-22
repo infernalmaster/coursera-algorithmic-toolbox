@@ -1,0 +1,27 @@
+{
+  "name": "algorithmic-toolbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "scripts": {
+    "build:watch": "tsc -w -p tsconfig.json",
+    "test:watch": "ava --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ava": "^0.15.2"
+  },
+
+  "ava": {
+    "files": [
+      "dist/**/*.test.js"
+    ],
+    "source": [
+      "dist/**/*.js"
+    ],
+    "concurrency": 4,
+    "failFast": false,
+    "tap": true
+  }
+}
