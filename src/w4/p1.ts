@@ -4,7 +4,7 @@ export function binarySearch(arr: number[], searched: number, low: number = 0, h
     return - 1
   }
 
-  const mid = Math.floor(low + (high - low) / 2)
+  const mid = Math.floor((high + low) / 2)
 
   if (searched === arr[mid]) {
     return mid
